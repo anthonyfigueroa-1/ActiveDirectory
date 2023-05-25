@@ -13,10 +13,10 @@ This tutorial outlines how to set up active directory using Azure.<br />
 - Windows 10</b> (21H2)
 
 <h2>Prerequisits<h2>
-<p>
+
 - Have a virtual machine within Azure that is running Windows Server 2022 Datacenter Azure Edition.
 - Have a second virtual machine within Azure that is running Windows 10.
-- Have both virtual machines connected to the same vnet when setting up.</p>
+- Have both virtual machines connected to the same vnet when setting up.<br />
 
 <h2>Steps</h2>
 
