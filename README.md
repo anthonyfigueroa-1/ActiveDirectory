@@ -55,10 +55,10 @@ This tutorial outlines how to set up active directory using Azure.<br />
   <br />
   
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/eLSWAC6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/h7VEvSC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
   - Join Client-1 to your domain (mydomain.com)
@@ -71,7 +71,7 @@ This tutorial outlines how to set up active directory using Azure.<br />
   <br />
   
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Mo199lY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
   - Setup Remote Desktop for non-administrative users on Client-1
