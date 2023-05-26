@@ -57,6 +57,9 @@ This tutorial outlines how to set up active directory using Azure.<br />
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 
   - Join Client-1 to your domain (mydomain.com)
 - From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
