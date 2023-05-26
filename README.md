@@ -33,25 +33,26 @@ This tutorial outlines how to set up active directory using Azure.<br />
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-- Login to DC-1 and install Active Directory Domain Services
+
+  - Login to DC-1 and install Active Directory Domain Services
 - Promote as a DC: Setup a new forest as mydomain.com (can be anything, just remember what it is)
 - Restart and then log back into DC-1 as user: mydomain.com\labuser
-</p>
+
 <br />
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-- Create an Admin and Normal User Account in AD
+
+  - Create an Admin and Normal User Account in AD
 - In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
 - Create a new OU named “_ADMINS”
 - Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”
 - Add jane_admin to the “Domain Admins” Security Group
 - Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
 - User jane_admin as your admin account from now on
-<br />
+
+  <br />
   
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
