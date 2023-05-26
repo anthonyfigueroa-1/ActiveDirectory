@@ -21,7 +21,7 @@ This tutorial outlines how to set up active directory using Azure.<br />
 <h2>Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/aydK00C.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
   - Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
@@ -31,7 +31,7 @@ This tutorial outlines how to set up active directory using Azure.<br />
   <br />
   
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/SE06Fvz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
   - Login to DC-1 and install Active Directory Domain Services
@@ -41,7 +41,7 @@ This tutorial outlines how to set up active directory using Azure.<br />
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ikCMoQ2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
   - Create an Admin and Normal User Account in AD
