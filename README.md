@@ -83,6 +83,10 @@ This tutorial outlines how to set up active directory using Azure.<br />
 
   <br />
   
+  <p>
+<img src="https://i.imgur.com/Mo199lY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+  
   - Create a bunch of additional users and attempt to log into client-1 with one of the users
 - Login to DC-1 as jane_admin
 - Open PowerShell_ise as an administrator
