@@ -57,23 +57,25 @@ This tutorial outlines how to set up active directory using Azure.<br />
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-- Join Client-1 to your domain (mydomain.com)
+
+  - Join Client-1 to your domain (mydomain.com)
 - From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
 - From the Azure Portal, restart Client-1
 - Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
 - Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
 - Create a new OU named “_CLIENTS” and drag Client-1 into there
-<br />
+
+  <br />
   
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-- Setup Remote Desktop for non-administrative users on Client-1
+
+  - Setup Remote Desktop for non-administrative users on Client-1
 - Log into Client-1 as mydomain.com\jane_admin and open system properties
 - Click “Remote Desktop”
 - Allow “domain users” access to remote desktop
 - You can now log into Client-1 as a normal, non-administrative user now
 - Normally you’d want to do this with Group Policy that allows you to change MANY systems at once
-<br />
+
+  <br />
