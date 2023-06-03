@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://i.imgur.com/AskeISC.png" alt="Active Directory logo"/>
+</p>
+
 <h1>Active Directory</h1>
 This tutorial outlines how to set up active directory using Azure.<br />
 
