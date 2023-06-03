@@ -70,5 +70,3 @@ You will now want to login to DC-1 and install Active Directory Domain Services.
 </p>
   
   For the final few steps we will want to create a bunch of additional users and attempt to log into client-1 with one of the users, to simulate a real-life example. We will want to first login to DC-1 as jane_admin. From the search menu you will want to search for and open PowerShell_ise as an admin. Go ahead and create a new File and paste the contents of this [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into it. Go ahead and run the script and observe as all the accounts are being created. When the script is finished open back up Active Directory Users and Computers and notice all the accounts in the appropriate Organizational Unit. Now choose a completely random user from the list and attempt to log into Client-1 with the account. Notice within the script it tells you the password for all the accounts. Now if you login using "mydomain.com\<random_user>" with the appropriate password, it should work and shows that you have setup Active Directory correctly.
-  
-    <br />
