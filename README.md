@@ -58,28 +58,17 @@ You will now want to login to DC-1 and install Active Directory Domain Services.
   <br />
   
 <p>
-<img src="https://i.imgur.com/Mo199lY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Mo199lY.png" height="80%" width="80%" alt="Sys Properties Step"/>
 </p>
 
-  - Setup Remote Desktop for non-administrative users on Client-1
-- Log into Client-1 as mydomain.com\jane_admin and open system properties
-- Click “Remote Desktop”
-- Allow “domain users” access to remote desktop
-- You can now log into Client-1 as a normal, non-administrative user now
-- Normally you’d want to do this with Group Policy that allows you to change MANY systems at once
+  We will now setup Remote Desktop for non-administrative users for Client-1. Go ahead and log into Client-1 as "mydomain.com\jane_admin" and open system properties -> click “Remote Desktop” -> allow “domain users” to access remote desktop. You can now have access to log into Client-1 as a non-administrative user.
 
   <br />
   
   <p>
-<img src="https://i.imgur.com/ZsO8bhA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ZsO8bhA.png" height="80%" width="80%" alt="Mass Creation of User Step"/>
 </p>
   
-  - Create a bunch of additional users and attempt to log into client-1 with one of the users
-- Login to DC-1 as jane_admin
-- Open PowerShell_ise as an administrator
-- Create a new File and paste the contents of the script into it (https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
-- Run the script and observe the accounts being created
-- When finished, open ADUC and observe the accounts in the appropriate OU
-- attempt to log into Client-1 with one of the accounts (take note of the password in the script)
+  For the final few steps we will want to create a bunch of additional users and attempt to log into client-1 with one of the users, to simulate a real-life example. We will want to first login to DC-1 as jane_admin. From the search menu you will want to search for and open PowerShell_ise as an admin. Go ahead and create a new File and paste the contents of this [script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into it. Go ahead and run the script and observe as all the accounts are being created. When the script is finished open back up Active Directory Users and Computers and notice all the accounts in the appropriate Organizational Unit. Now choose a completely random user from the list and attempt to log into Client-1 with the account. Notice within the script it tells you the password for all the accounts. Now if you login using "mydomain.com\<random_user>" with the appropriate password, it should work and shows that you have setup Active Directory correctly.
   
     <br />
