@@ -44,13 +44,7 @@ You will now want to login to DC-1 and install Active Directory Domain Services.
 <img src="https://i.imgur.com/ikCMoQ2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-  - Create an Admin and Normal User Account in AD
-- In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
-- Create a new OU named “_ADMINS”
-- Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”
-- Add jane_admin to the “Domain Admins” Security Group
-- Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
-- User jane_admin as your admin account from now on
+ Now in this step we are going to have to create a few things. First we want to create an Admin and Normal User Account in Active Directory. Within Active Directory Users and Computers you will want to create an Organizational Unit called “_EMPLOYEES” and another called “_ADMINS”. Now you will create a new employee named “Jane Doe”, you can use whatever password you would like as long as you can remember it, with the username of “jane_admin”. Go in and add jane_admin to the “Domain Admins” Security Group. Then you will want to log out and close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”. From now on you will want to login using user jane_admin as your admin account from now on.
 
   <br />
   
@@ -61,12 +55,7 @@ You will now want to login to DC-1 and install Active Directory Domain Services.
 <img src="https://i.imgur.com/h7VEvSC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-  - Join Client-1 to your domain (mydomain.com)
-- From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
-- From the Azure Portal, restart Client-1
-- Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart)
-- Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
-- Create a new OU named “_CLIENTS” and drag Client-1 into there
+ Next join Client-1 to your domain "mydomain.com", or whatever domain you have chosen. From within the Azure portal you will set Client-1’s DNS settings to the DC’s Private IP address. Stay within the Azure portal and go ahead and restart Client-1. Now remote desktop and login to Client-1 as the original local admin "labuser" and join it to the domain. Login as well, through remote desktop, to the Domain Controller and verify that Client-1 shows up in Active Directory Users and Computers inside the “Computers” container on the root of the domain. Go ahead and create another new Organizational Unit named “_CLIENTS” and drag Client-1 into there.
 
   <br />
   
