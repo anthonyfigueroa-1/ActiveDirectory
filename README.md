@@ -28,7 +28,7 @@ This tutorial outlines how to set up active directory using Azure.<br />
 <img src="https://i.imgur.com/aydK00C.png" height="80%" width="80%" alt="CMD Ping Step"/>
 </p>
   
-First you will want to login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> which is a perpetual ping to keep us updated on the connectivity. Now login to the Domain Controller and enable ICMPv4 in on the local windows Firewall. Afterwards check back into Client-1 to see the ping should go through.
+First you will want to login to Client-1 with Remote Desktop and ping DC-1’s private IP address with "ping -t <ip address>" which is a perpetual ping to keep us updated on the connectivity. Now login to the Domain Controller and enable ICMPv4 in on the local Windows Firewall. Afterwards check back into Client-1 to see the ping should go through.
 
   <br />
   
@@ -36,7 +36,7 @@ First you will want to login to Client-1 with Remote Desktop and ping DC-1’s p
 <img src="https://i.imgur.com/SE06Fvz.png" height="80%" width="80%" alt="Active Directory Setup Step"/>
 </p>
 
-You will now want to login to DC-1 and install Active Directory Domain Services. Go in and promote as a domain controller, then setup a new forest as "mydomain.com", doesn't have to be this exactly it can be whatever you would like as long as you can remember it. Now restart DC-1 and then log back into it as user "mydomain.com\labuser".
+You will now want to login to DC-1 and install Active Directory Domain Services. Go in and promote it as a domain controller, then setup a new forest as "mydomain.com", doesn't have to be this exactly it can be whatever you would like as long as you can remember it. Now restart DC-1 and then log back into it as user "mydomain.com\labuser".
 
 <br />
 
