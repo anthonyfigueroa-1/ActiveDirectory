@@ -3,7 +3,7 @@
 </p>
 
 <h1>Active Directory</h1>
-This tutorial outlines how to set up active directory using Azure.<br />
+This tutorial outlines how to set up Active Directory using Azure.<br />
 
 
 
@@ -11,6 +11,7 @@ This tutorial outlines how to set up active directory using Azure.<br />
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
+- Active Directory
 
 <h2>Operating Systems Used </h2>
 
