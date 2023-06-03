@@ -41,7 +41,7 @@ You will now want to login to DC-1 and install Active Directory Domain Services.
 <br />
 
 <p>
-<img src="https://i.imgur.com/ikCMoQ2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ikCMoQ2.png" height="80%" width="80%" alt="AD Creation Step"/>
 </p>
 
  Now in this step we are going to have to create a few things. First we want to create an Admin and Normal User Account in Active Directory. Within Active Directory Users and Computers you will want to create an Organizational Unit called “_EMPLOYEES” and another called “_ADMINS”. Now you will create a new employee named “Jane Doe”, you can use whatever password you would like as long as you can remember it, with the username of “jane_admin”. Go in and add jane_admin to the “Domain Admins” Security Group. Then you will want to log out and close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”. From now on you will want to login using user jane_admin as your admin account from now on.
@@ -49,8 +49,8 @@ You will now want to login to DC-1 and install Active Directory Domain Services.
   <br />
   
 <p>
-<img src="https://i.imgur.com/eLSWAC6.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/h7VEvSC.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/eLSWAC6.png" height="60%" width="60%" alt="Azure DNS Step"/>
+<img src="https://i.imgur.com/h7VEvSC.png" height="60%" width="60%" alt="AD Computer Confirm Step"/>
 </p>
 
  Next join Client-1 to your domain "mydomain.com", or whatever domain you have chosen. From within the Azure portal you will set Client-1’s DNS settings to the DC’s Private IP address. Stay within the Azure portal and go ahead and restart Client-1. Now remote desktop and login to Client-1 as the original local admin "labuser" and join it to the domain. Login as well, through remote desktop, to the Domain Controller and verify that Client-1 shows up in Active Directory Users and Computers inside the “Computers” container on the root of the domain. Go ahead and create another new Organizational Unit named “_CLIENTS” and drag Client-1 into there.
