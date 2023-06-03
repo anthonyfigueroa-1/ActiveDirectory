@@ -25,7 +25,7 @@ This tutorial outlines how to set up active directory using Azure.<br />
 <h2>Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/aydK00C.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/aydK00C.png" height="80%" width="80%" alt="CMD Ping Step"/>
 </p>
   
 First you will want to login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> which is a perpetual ping to keep us updated on the connectivity. Now login to the Domain Controller and enable ICMPv4 in on the local windows Firewall. Afterwards check back into Client-1 to see the ping should go through.
