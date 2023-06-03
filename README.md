@@ -49,10 +49,10 @@ You will now want to login to DC-1 and install Active Directory Domain Services.
   <br />
   
 <p>
-<img src="https://i.imgur.com/eLSWAC6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/eLSWAC6.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="https://i.imgur.com/h7VEvSC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/h7VEvSC.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 </p>
 
  Next join Client-1 to your domain "mydomain.com", or whatever domain you have chosen. From within the Azure portal you will set Client-1’s DNS settings to the DC’s Private IP address. Stay within the Azure portal and go ahead and restart Client-1. Now remote desktop and login to Client-1 as the original local admin "labuser" and join it to the domain. Login as well, through remote desktop, to the Domain Controller and verify that Client-1 shows up in Active Directory Users and Computers inside the “Computers” container on the root of the domain. Go ahead and create another new Organizational Unit named “_CLIENTS” and drag Client-1 into there.
